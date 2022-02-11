@@ -1,1 +1,13 @@
-<p>login works!</p>
+<h5>Login</h5>
+
+<form class="form-floating">
+    <input [(ngModel)]="usuario.nome" name="usuario" id="usuario" type="text" class="form-control"  placeholder="name">
+    <label for="usuario">Usuário </label>
+</form>
+
+<form class="form-floating">
+    <input [(ngModel)]="usuario.senha" name="senha" type="password" class="form-control" id="senha" placeholder="senha">
+    <label for="senha">Senha </label>
+</form>
+
+<input class="btn btn-primary" type="submit" value="Login" (click)="fazerLogin()">
