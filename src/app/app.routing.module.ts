@@ -11,7 +11,10 @@ import { Routes, RouterModule } from '@angular/router'
 
 
 
+
 const APP_ROUTES: Routes = [
+    { path: 'cursos', loadChildren: () => import('../app/cursos/cursos.module').then ( x => x.CursosModule)},
+    { path: 'alunos', loadChildren: () => import('../app/alunos/alunos.module').then (x => x.AlunosModule)},
     //{ path: 'cursos', component: CursosComponent},
     //{ path: 'curso/:id', component: CursoDetalheComponent },
     { path: 'login', component: LoginComponent},
