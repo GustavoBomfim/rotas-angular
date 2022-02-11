@@ -20,9 +20,9 @@
         <li class="nav-item">
           <a  routerLink="/cursos" routerLinkActive="active"  class="nav-link" [queryParams]="{pagina:1}">Cursos</a>
         </li>
-        <li class="nav-item" routerLinkActive="active">
+        <!--li class="nav-item" routerLinkActive="active">
           <a  [routerLink]="['/curso', idCurso.value]"  class="nav-link" aria-current="page">Curso com id </a>
-        </li>
+        </li-->
         <li class="nav-item">
           <a  routerLink="/alunos" routerLinkActive="active"  class="nav-link">Alunos</a>
         </li>
@@ -47,8 +47,8 @@
 </nav>
 
 <div class="container">
-  <p>Enter com o id do curso </p>
-  <input #idCurso>
+  <!--p>Enter com o id do curso </p>
+  <input #idCurso-->
   <router-outlet></router-outlet>
 </div>
 
