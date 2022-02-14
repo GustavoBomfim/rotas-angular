@@ -1,7 +1,7 @@
 <h5>Criar/Editar Aluno</h5>
 
 <div class="form-floating mb-3">
-    <input type="text" class="form-control" id="nome" [(ngModel)]="aluno.nome">
+    <input type="text" class="form-control" id="nome" [(ngModel)]="aluno.nome" (input)="onInput()">
     <label for="nome">Nome</label>
   </div>
   <div class="form-floating">
